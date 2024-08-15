@@ -17,7 +17,7 @@ const Navbar = () => {
           <ul className="ml-12 inline-flex space-x-8">
             <li>
               <a
-                href="#"
+                href="/"
                 className="inline-flex items-center text-sm font-semibold text-white hover:bg-white rounded-xl p-2 hover:text-black"
               >
                 Home

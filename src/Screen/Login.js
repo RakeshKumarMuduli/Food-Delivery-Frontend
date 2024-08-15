@@ -54,7 +54,7 @@ const Login = () => {
     }
 
     try {
-      const response = await fetch('http://localhost:5000/api/login', {
+      const response = await fetch('http://localhost:5000/login', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(formData),
@@ -64,7 +64,7 @@ const Login = () => {
 
       if (response.ok) {
         console.log('Login successful');
-        localStorage.setItem('token', result.token);
+        
         navigate('/customer'); // Redirect to "/customer"
       } else {
         alert(result.message);

@@ -32,17 +32,15 @@ const Register = () => {
   };
 
   const handleSubmit = async (e) => {
-    
     e.preventDefault();
     if (validateForm()) {
       try {
-        navigate('/customer');
         const response = await axios.post('http://localhost:5000/api/register', formData);
         console.log('Form submitted:', response.data);
         setFormSubmitted(true);
 
         // Redirect to login page after successful submission
-        //navigate('/login');
+        navigate('/login');
       } catch (error) {
         console.error('Error submitting form:', error.response?.data || error.message);
         // Optionally, you can show an error message to the user here

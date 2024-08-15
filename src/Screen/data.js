@@ -36,80 +36,80 @@ const data={
             id:2,
             img:image1,
             name:"Burger",
-            price:50
+            price:40
         },
         {
             id:3,
             img:image2,
             name:"Chilligobi",
-            price:50
+            price:55
         },
         {
             id:4,
             img:image3,
             name:"Chole",
-            price:50
+            price:60
         },
         {
             id:5,
             img:image4,
             name:"Chawmin",
-            price:50
+            price:65
         },
         {
             id:6,
             img:image5,
             name:"Dahi Bara",
-            price:50
+            price:30
         },
         {
             id:7,
             img:image6,
             name:"Dosa",
-            price:50
+            price:25
         },
        
         {
             id:9,
             img:image7,
             name:"Idle Sambar",
-            price:50
+            price:45
         },
         {
             id:10,
             img:image9,
             name:"Mudhi Mutton",
-            price:50
+            price:70
         },
         {
             id:11,
             img:image10,
             name:"Pakhala",
-            price:50
+            price:70
         },
         {
             id:12,
             img:image11,
             name:"Rasogola",
-            price:50
+            price:15
         },
         {
             id:13,
             img:image12,
             name:"Upama",
-            price:50
+            price:30
         },
         {
             id:14,
             img:image13,
             name:"Saganasaga",
-            price:50
+            price:40
         },
         {
             id:15,
             img:image14,
             name:"Butter paneer",
-            price:50
+            price:90
         },
         {
             id:16,
@@ -121,25 +121,25 @@ const data={
             id:17,
             img:image16,
             name:"Gupchup",
-            price:50
+            price:20
         },
         {
             id:18,
             img:image17,
             name:"Masala Papad",
-            price:50
+            price:30
         },
         {
             id:19,
             img:image18,
             name:"Muttom Biriyani",
-            price:50
+            price:90
         },
         {
             id:20,
             img:image19,
             name:"Paneer Teeka",
-            price:50
+            price:30
         },
         {
             id:21,
@@ -151,7 +151,7 @@ const data={
             id:22,
             img:image21,
             name:"Veg Biriyani",
-            price:50
+            price:80
         },
         {
             id:23,
@@ -163,13 +163,13 @@ const data={
             id:24,
             img:image23,
             name:"Presty",
-            price:50
+            price:70
         },
         {
             id:1,
             img:image24,
             name:"",
-            price:50
+            price:40
         },
     ],
 };
