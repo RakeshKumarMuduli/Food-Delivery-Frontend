@@ -7,7 +7,7 @@ const Layout = ({children}) => {
     <React.Fragment>
         <Navbar />
         <React.Fragment>
-            {children}
+            {children }
         </React.Fragment>
         <Footer/>
     </React.Fragment>
