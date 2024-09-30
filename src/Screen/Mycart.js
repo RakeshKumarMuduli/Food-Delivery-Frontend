@@ -1,5 +1,5 @@
 import React from 'react';
-import { Link } from 'react-router-dom'; // Assuming you're using React Router
+import { Link } from 'react-router-dom'; 
 import { useCart } from 'react-use-cart'
 
 const Mycart = ({
@@ -14,7 +14,7 @@ const Mycart = ({
         emptyCart
 }=useCart();
   return (
-    <section className="container mx-auto py-6">
+    <section className="container mx-auto py-6 bg-black">
       <div className="bg-gray-800 p-6 rounded-lg">
         <h1 className="text-white text-2xl mb-4">Shopping Cart</h1>
         <div className="overflow-x-auto">
@@ -32,10 +32,10 @@ const Mycart = ({
               {items.map((item, index) => (
                 <tr key={index} className="border-b border-gray-600">
                   <td className="px-4 py-2">
-                    <img src={item.img} alt={item.name} className="h-16 w-16 object-cover" />
+                    <img src={item.image} alt="Loading..." className="h-16 w-fit object-contain" />
                   </td>
                   <td className="px-4 py-2  text-white">{item.name}</td>
-                  <td className="px-4 py-2  text-white">₹ {item.price.toFixed(2)}</td>
+                  <td className="px-4 py-2  text-white">₹ {item.price}</td>
                   <td className="px-4 py-2  text-white">
                     <div className="flex items-center">
                       <button
@@ -72,14 +72,14 @@ const Mycart = ({
             <p className="text-white">Total Items: {totalItems}</p>
           </div>
           <div>
-            <h2 className="text-2xl font-bold text-white">Total Price = ₹ {cartTotal.toFixed(2)}</h2>
+            <h2 className="text-2xl font-bold text-white">Total Price = ₹ {cartTotal}</h2>
           </div>
         </div>
-        <div className="flex justify-end mt-6">
-          <button className="btn-primary mr-4  text-white hover:text-cyan-400" onClick={() => emptyCart()}>
+        <div className="flex justify-end mt-6 ">
+          <button className="btn-primary mr-4 bg-red-700 p-1 rounded-md text-white hover:bg-red-800" onClick={() => emptyCart()}>
             Clear Cart
           </button>
-          <Link to="/customer" className="btn-primary  text-white hover:text-cyan-400">
+          <Link to="/" className="btn-primary  h-8 p-1 rounded-md hover:bg-cyan-500 w-fit bg-cyan-600 text-white ">
             Continue Shopping
           </Link>
         </div>
